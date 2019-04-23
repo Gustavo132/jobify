@@ -2,15 +2,16 @@ const express = require('express')
 const app = express()
 const bodyparse = require('body-parser')
 
-const port = process.env.PORT || 3000
 const path = require('path')
 
 const sqlite = require('sqlite')
 const dbConnection = sqlite.open(path.relative(__dirname, 'banco.sqlite'), { Promise })
 
-app.set('views', path(__dirname, 'views'))
+const port = process.env.PORT || 3000
+
+app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
-app.use(express.static('public'))
+app.use(express.static(path.join(__dirname, 'public')))
 app.use(bodyparse.urlencoded({ extended:true }))
 
 app.get('/', async(request, response) => {
