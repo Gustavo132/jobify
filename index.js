@@ -85,7 +85,7 @@ const init = async() => {
     await db.run('create table if not exists vagas(id INTEGER PRIMARY KEY, categoria INTEGER, titulo TEXT, descricao TEXT);') 
 }
 init()
-
+//testando git
 app.listen(3000, (err) => {
     if(err){
         console.log('Não foi possível executar o servidor do Jobfy.') 
