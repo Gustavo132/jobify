@@ -15,7 +15,7 @@ app.use('/admin', (req, res, next) => {
     if (req.hostname === 'localhost') {
         next();
     } else {
-        alert('Você não tem acesso ao painel de administrador.')
+        res.alert('Você não tem acesso ao painel de administrador.')
     }
 })
 
