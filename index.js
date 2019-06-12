@@ -12,10 +12,10 @@ const dbConnection = sqlite.open(path.resolve(__dirname, 'banco.sqlite'), {
 const port = process.env.PORT || 3000
 
 app.use('/admin', (req, res, next) => {
-    if (req.hostname === 'localhost') {
-        next();
+    if (req.hostname === 'localhosts') {
+        next()
     } else {
-        res.alert('Você não tem acesso ao painel de administrador.')
+        res.send('Você não tem acesso ao painel de administrador.')
     }
 })
 
