@@ -1,43 +1,62 @@
-body{
+body {
     font-family: 'roboto', sans-serif;
 }
-ul{
+
+.lista{
+    margin-left: 8px;
+    max-width: 600px;
+}
+
+.lista a{
+    color: black;
+}
+
+ul {
     list-style: none;
     padding-left: 16;
 }
-li{
-    margin: 0;
-}
-h1{
+
+#logo {
     text-align: center;
 }
-p{
+
+
+p {
     text-align: center;
 }
-h3{
+
+h3 {
     font-size: 24px;
 }
-h2{
+
+.descricao{
+    
+}
+
+.gray {
     background-color: #c4c4c4;
     padding: 8px;
     font-size: 24;
 }
 
-label{
+label {
     display: block;
     margin: 20px 0 4px 0;
 }
-input{
+
+input {
     display: block;
     padding: 4px;
     width: 440px;
 }
-textarea{
+
+textarea {
     display: block;
     padding: 8px;
     width: 440px;
     height: 240px;
 }
-button{
+
+button {
     padding: 12px;
 }

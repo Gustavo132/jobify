@@ -1,12 +1,16 @@
 <%- include('header')%>
-<h2>Open roles:</h2>
+<h2 class="gray" >Open roles:</h2>
 <% categorias.forEach(categoria => { %>
     
-    <div>
-        <h3><%- categoria.categoria %></h3>
-        <ul>
+    <div  class=" lista list-group-item list-group-item-action">
+        <h3 class="mb-1"><%- categoria.categoria %></h3>
+        <ul class="list-group" >
             <% categoria.vagas.forEach(vagas => { %>
-                <li><a href="vaga/<%- vagas.id %>"> <%- vagas.titulo %> </a></li>
+                <a href="vaga/<%- vagas.id %>"  >
+                    <li class="list-group-item list-group-item-action flex-column align-items-start">
+                        <%- vagas.titulo %>
+                    </li>
+                </a>    
             <% } ) %>
         </ul>
     </div>

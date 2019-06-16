@@ -1,13 +1,14 @@
 <%- include('header') %>
 
-<h2>Admin Categorias:
-    <a href="/admin/categorias/nova">Nova categiria</a>
+<h2 class="gray">Admin Categorias:
+    <a href="/admin/categorias/nova">Nova</a> |
+    <a href="/admin/">Voltar</a>
 </h2>
 
-<div> 
-    <ul> 
+<div class="lista"> 
+    <ul class="list-group"> 
         <% categorias.forEach( categoria => { %> 
-            <li>
+            <li class="list-group-item list-group-item-action flex-column align-items-start">
                 <%- categoria.categoria %> | 
                 <a href="/admin/categorias/delete/<%- categoria.id %>">
                     Excluir
