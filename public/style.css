@@ -9,6 +9,7 @@ body {
 
 .lista a{
     color: black;
+    margin: 5px;
 }
 
 ul {
@@ -29,9 +30,6 @@ h3 {
     font-size: 24px;
 }
 
-.descricao{
-    
-}
 
 .gray {
     background-color: #c4c4c4;
