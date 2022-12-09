@@ -15,7 +15,7 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "parser": "^0.1.4",
     "promise": "^8.0.3",
     "sqlite": "^3.0.3"
